@@ -19,9 +19,9 @@ GitHub URI: https://github.com/pronamic/wp-pronamic-issuu
 */
 
 /**
- * Get the Issuu PDFs
+ * Get the Issuu PDF attachments
  * 
- * @param mixed $post
+ * @param string $post_id
  * @return array
  */
 function pronamic_issuu_get_pdfs( $post_id = null ) {
@@ -43,4 +43,38 @@ function pronamic_issuu_get_pdfs( $post_id = null ) {
 			)
 		)
 	) );
+}
+
+/**
+ * Check if the post has Issuu PDF attachments
+
+ * @param string $post_id
+ * @return array
+ */
+function pronamic_issuu_has_pdf( $post_id = null ) {
+	$post_id = ( null === $post_id ) ? get_the_ID() : $post_id;
+	
+	$pdfs = pronamic_issuu_get_pdfs( $post_id );
+	
+	return !empty( $pdfs );
+}
+
+/**
+ * Get the image URL from Issuu
+ * 
+ * @param string $document_id
+ * @param int $page
+ * @param string $size
+ */
+function pronamic_issuu_get_image_url( $document_id, $page = 1, $size = null ) {
+	$size = ( null === $size ) ? '' : '_thumb_' . $size;
+
+	$url = sprintf(
+		'http://image.issuu.com/%s/jpg/page_%d%s.jpg', 
+		$document_id, 
+		$page,
+		$size
+	);
+	
+	return $url;
 }
