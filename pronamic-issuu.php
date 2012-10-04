@@ -78,3 +78,21 @@ function pronamic_issuu_get_image_url( $document_id, $page = 1, $size = null ) {
 	
 	return $url;
 }
+
+function pronamic_issuu_get_document_url( $username, $name ) {
+	$url = sprintf(
+		'http://issuu.com/%s/docs/%s',
+		$username,
+		$name
+	);
+
+	$url = add_query_arg( array(
+		'mode'                => 'window',
+		'printButtonEnabled'  => false,
+		'shareButtonEnabled'  => false,
+		'searchButtonEnabled' => false,
+		'backgroundColor'     => '#222222'
+	), $url );
+
+	return $url;
+}
