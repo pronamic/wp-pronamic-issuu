@@ -33,8 +33,6 @@ WordPress installation and then activate the Plugin from Plugins page.
 
 *	[Pronamic](http://pronamic.eu/)
 *	[Remco Tolsma](http://remcotolsma.nl/)
-*	[Online styleguide van iDEAL](http://huisstijl.idealdesk.com/) 
-*	[iDEAL Professional - SSL Certificaten](http://www.ideal-simulator.nl/ideal-professional-ssl-certificaten.html)
 *	[Markdown's Syntax Documentation][markdown syntax]
 
 [markdown syntax]: http://daringfireball.net/projects/markdown/syntax
