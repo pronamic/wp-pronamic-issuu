@@ -4,7 +4,7 @@ Plugin Name: Pronamic Issuu
 Plugin URI: http://pronamic.eu/wp-plugins/issuu/
 Description: Easily integrate Issuu documents into WordPress.
  
-Version: 1.0
+Version: 0.1
 Requires at least: 3.0
 
 Author: Pronamic
@@ -26,6 +26,13 @@ class Pronamic_Issuu_Plugin {
 	 */
 	public static $file;
 
+	/**
+	 * The plugin directory name
+	 * 
+	 * @var string
+	 */
+	public static $dirname;
+
 	//////////////////////////////////////////////////
 
 	/**
@@ -33,6 +40,7 @@ class Pronamic_Issuu_Plugin {
 	 */
 	public static function bootstrap( $file ) {
 		self::$file = $file;
+		self::$dirname = dirname( $file );
 
 		add_action( 'init',           array( __CLASS__, 'init' ) );
 		add_action( 'admin_init',     array( __CLASS__, 'admin_init' ) );
@@ -51,9 +59,9 @@ class Pronamic_Issuu_Plugin {
 		load_plugin_textdomain( 'pronamic_issuu', false, $rel_path );
 
 		// Require
-		require_once dirname( self::$file ) . '/includes/taxonomy.php';
-		require_once dirname( self::$file ) . '/includes/gravityforms.php';
-		require_once dirname( self::$file ) . '/includes/template.php';
+		require_once self::$dirname . '/includes/taxonomy.php';
+		require_once self::$dirname . '/includes/gravityforms.php';
+		require_once self::$dirname . '/includes/template.php';
 	
 		// Post types
 		$slug = get_option( 'pronamic_issuu_doc' );
@@ -155,7 +163,8 @@ class Pronamic_Issuu_Plugin {
 				'label_for' => 'pronamic_issuu_doc_base' 
 			) 
 		);
-	
+
+		// Register settings
 		register_setting( 'pronamic_issuu', 'pronamic_issuu_username' );
 		register_setting( 'pronamic_issuu', 'pronamic_issuu_api_key' );
 		register_setting( 'pronamic_issuu', 'pronamic_issuu_api_secret' );
