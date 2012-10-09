@@ -18,6 +18,12 @@ Extract the zip file and just drop the contents in the wp-content/plugins/ direc
 WordPress installation and then activate the Plugin from Plugins page.
 
 
+== Capabilities ==
+
+*	read_issuu_documents
+*	read_private_issuu_documents
+
+
 == Screenshots ==
 
 ...

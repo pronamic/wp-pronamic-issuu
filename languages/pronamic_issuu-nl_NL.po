@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pronamic Issuu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-04 14:25+0100\n"
-"PO-Revision-Date: 2012-10-04 14:25+0100\n"
+"POT-Creation-Date: 2012-10-09 09:21+0100\n"
+"PO-Revision-Date: 2012-10-09 09:21+0100\n"
 "Last-Translator: Remco Tolsma <remco@pronamic.nl>\n"
 "Language-Team: Pronamic <info@pronamic.nl>\n"
 "Language: nl_NL\n"
@@ -15,96 +15,124 @@ msgstr ""
 "esc_attr__;_nx:4c,1,2;_nx_noop:4c,1,2;esc_html_x:2c,1;esc_html__;_ex:2c,1\n"
 "X-Poedit-Basepath: ../\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.5.3\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: pronamic-issuu.php:60
+#: pronamic-issuu.php:72
 msgctxt "slug"
 msgid "documents"
 msgstr "documenten"
 
-#: pronamic-issuu.php:64
+#: pronamic-issuu.php:76
 msgctxt "post type general name"
 msgid "Documents"
 msgstr "Documenten"
 
-#: pronamic-issuu.php:65
+#: pronamic-issuu.php:77
 msgctxt "post type singular name"
 msgid "Document"
 msgstr "Document"
 
-#: pronamic-issuu.php:66
+#: pronamic-issuu.php:78
 msgctxt "pronamic_issuu_doc"
 msgid "Add New"
 msgstr "Nieuwe toevoegen"
 
-#: pronamic-issuu.php:67
+#: pronamic-issuu.php:79
 msgid "Add New Document"
 msgstr "Nieuw document toevoegen"
 
-#: pronamic-issuu.php:68
+#: pronamic-issuu.php:80
 msgid "Edit Document"
 msgstr "Document bewerken"
 
-#: pronamic-issuu.php:69
+#: pronamic-issuu.php:81
 msgid "New Document"
 msgstr "Nieuw document"
 
-#: pronamic-issuu.php:70
+#: pronamic-issuu.php:82
 msgid "View Document"
 msgstr "Document bekijken"
 
-#: pronamic-issuu.php:71
+#: pronamic-issuu.php:83
 msgid "Search Document"
 msgstr "Zoek documenten"
 
-#: pronamic-issuu.php:72
+#: pronamic-issuu.php:84
 msgid "No documents found"
 msgstr "Geen documenten gevonden"
 
-#: pronamic-issuu.php:73
+#: pronamic-issuu.php:85
 msgid "No documents found in Trash"
 msgstr "Geen documenten gevonden in de prullenbak"
 
-#: pronamic-issuu.php:74
+#: pronamic-issuu.php:86
 msgid "Parent Document:"
 msgstr "Bovenliggend document:"
 
-#: pronamic-issuu.php:75
+#: pronamic-issuu.php:87
 msgid "Documents"
 msgstr "Documenten"
 
-#: pronamic-issuu.php:96
+#: pronamic-issuu.php:109
 msgid "General"
 msgstr "Algemeen"
 
-#: pronamic-issuu.php:105
-msgid "Permalinks"
-msgstr "Permalinks"
-
-#: pronamic-issuu.php:113
+#: pronamic-issuu.php:116
 msgid "Username"
 msgstr "Gebruikersnaam"
 
-#: pronamic-issuu.php:125
+#: pronamic-issuu.php:128
 msgid "API key"
 msgstr "API sleutel"
 
-#: pronamic-issuu.php:137
+#: pronamic-issuu.php:140
 msgid "API secret"
 msgstr "API geheim"
 
-#: pronamic-issuu.php:149
+#: pronamic-issuu.php:153
+msgid "Pages"
+msgstr "Pagina's"
+
+#: pronamic-issuu.php:160
+msgid "No Access Page"
+msgstr "Geen toegang pagina"
+
+#: pronamic-issuu.php:172
+msgid "Permalinks"
+msgstr "Permalinks"
+
+#: pronamic-issuu.php:179
 msgid "Document base"
 msgstr "Documentbasis"
 
-#: pronamic-issuu.php:171 admin/settings.php:10
+#: pronamic-issuu.php:203 admin/settings.php:10
 msgid "Issuu Settings"
 msgstr "Issuu instellingen"
 
-#: pronamic-issuu.php:172
+#: pronamic-issuu.php:204
 msgid "Settings"
 msgstr "Instellingen"
+
+#: pronamic-issuu.php:251
+msgid "&mdash; Select a page &mdash;"
+msgstr "&mdash; Selecteer een pagina &mdash;"
+
+#: pronamic-issuu.php:360
+msgid "Editor"
+msgstr "Redacteur"
+
+#: pronamic-issuu.php:364
+msgid "Administrator"
+msgstr "Beheerder"
+
+#: admin/plugins.php:2
+msgid "Plugins"
+msgstr "Plugins"
+
+#: admin/plugins.php:51
+msgid "Search Plugin"
+msgstr "Zoek plugin"
 
 #~ msgctxt "slug"
 #~ msgid "companies"
@@ -755,9 +783,6 @@ msgstr "Instellingen"
 #~ msgid "Number Payments"
 #~ msgstr "Aantal betalingen"
 
-#~ msgid "Edit"
-#~ msgstr "Bewerken"
-
 #~ msgid "Tests"
 #~ msgstr "Tests"
 
@@ -1078,12 +1103,6 @@ msgstr "Instellingen"
 #~ msgid "Error"
 #~ msgstr "Fout"
 
-#~ msgid "Page:"
-#~ msgstr "Pagina:"
-
-#~ msgid "&mdash; Select &mdash;"
-#~ msgstr "&mdash; Selecteren &mdash;"
-
 #~ msgid "URL:"
 #~ msgstr "URL:"
 
@@ -1124,9 +1143,6 @@ msgstr "Instellingen"
 
 #~ msgid "iDEAL Administrator"
 #~ msgstr "iDEAL beheerder"
-
-#~ msgid "Administrator"
-#~ msgstr "Beheerder"
 
 #~ msgid "Cancelled"
 #~ msgstr "Geannuleerd"

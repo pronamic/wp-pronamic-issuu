@@ -28,6 +28,19 @@ function pronamic_issuu_get_pdfs( $post_id = null ) {
 }
 
 /**
+ * Get the Issuu PDF attachment
+ * 
+ * @param string $post_id
+ * @return object
+ */
+function pronamic_issuu_get_pdf( $post_id = null ) {
+	$pdfs = pronamic_issuu_get_pdfs( $post_id );
+	$pdf = array_shift( $pdfs );
+
+	return $pdf;
+}
+
+/**
  * Check if the post has Issuu PDF attachments
 
  * @param string $post_id
@@ -61,6 +74,12 @@ function pronamic_issuu_get_image_url( $document_id, $page = 1, $size = null ) {
 	return $url;
 }
 
+/**
+ * Get Issuu document URL for the specified document name and Issuu username
+ *  
+ * @param string $username
+ * @param string $name
+ */
 function pronamic_issuu_get_document_url( $username, $name ) {
 	$url = sprintf(
 		'http://issuu.com/%s/docs/%s',
@@ -70,11 +89,32 @@ function pronamic_issuu_get_document_url( $username, $name ) {
 
 	$url = add_query_arg( array(
 		'mode'                => 'window',
-		'printButtonEnabled'  => false,
-		'shareButtonEnabled'  => false,
-		'searchButtonEnabled' => false,
+		'printButtonEnabled'  => 'false',
+		'shareButtonEnabled'  => 'false',
+		'searchButtonEnabled' => 'false',
 		'backgroundColor'     => '#222222'
 	), $url );
 
 	return $url;
+}
+
+/**
+ * Get Issuu PDF shortcodes
+ * 
+ * @return string
+ */
+function pronamic_issuu_get_shortcodes( $post_id = null ) {
+	$post_id = ( null === $post_id ) ? get_the_ID() : $post_id;
+
+	$shortcodes = array();
+
+	$pdfs = pronamic_issuu_get_pdfs( $post_id );
+
+	foreach ( $pdfs as $pdf ) {
+		$document_id = get_post_meta( $pdf->ID, 'issuu_pdf_id', true );
+
+		$shortcodes[] = '[pdf issuu_pdf_id="' . $document_id . '"]';
+	}
+	
+	return $shortcodes;
 }
