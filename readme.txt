@@ -3,7 +3,7 @@ Contributors: pronamic, remcotolsma
 Tags: pronamic, issuu, pdf, document, deprecated
 Requires at least: 3.0
 Tested up to: 3.2
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 
 Deprecated — Easily integrate Issuu documents into WordPress.
 
@@ -32,6 +32,9 @@ WordPress installation and then activate the Plugin from Plugins page.
 
 
 == Changelog ==
+
+= 1.0.1 =
+*	Added an deprecated notice.
 
 = 1.0 =
 *	Initial release
