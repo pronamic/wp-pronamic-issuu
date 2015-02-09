@@ -1,14 +1,14 @@
 <?php
 /*
 Plugin Name: Pronamic Issuu
-Plugin URI: http://pronamic.eu/wp-plugins/issuu/
-Description: Easily integrate Issuu documents into WordPress.
+Plugin URI: http://www.pronamic.eu/plugins/pronamic-issuu/
+Description: Deprecated — Easily integrate Issuu documents into WordPress.
  
-Version: 0.1
+Version: 1.0.1
 Requires at least: 3.0
 
 Author: Pronamic
-Author URI: http://pronamic.eu/
+Author URI: http://www.pronamic.eu/
 
 Text Domain: pronamic_issuu
 Domain Path: /languages/
@@ -289,7 +289,7 @@ class Pronamic_Issuu_Plugin {
 		wp_dropdown_pages( array(
 			'name'             => $name,
 			'selected'         => get_option( $name, '' ),
-			'show_option_none' => __( '&mdash; Select a page &mdash;', 'pronamic_companies' ) 
+			'show_option_none' => __( '&mdash; Select a page &mdash;', 'pronamic_issuu' ) 
 		) );
 	}
 
