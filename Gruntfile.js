@@ -30,7 +30,7 @@ module.exports = function( grunt ) {
 		checkwpversion: {
 			options: {
 				readme: 'readme.txt',
-				plugin: 'pronmic-issuu.php',
+				plugin: 'pronamic-issuu.php',
 			},
 			check: {
 				version1: 'plugin',
@@ -59,7 +59,7 @@ module.exports = function( grunt ) {
 		// Check textdomain errors
 		checktextdomain: {
 			options:{
-				text_domain: 'parcelware',
+				text_domain: 'pronamic_issuu',
 				keywords: [
 					'__:1,2d',
 					'_e:1,2d',
@@ -200,7 +200,7 @@ module.exports = function( grunt ) {
 	grunt.loadNpmTasks( 'grunt-rt-wp-deploy' );
 
 	// Register tasks
-	grunt.registerTask( 'default', [ 'phplint', 'phpcs', 'checkwpversion' ] );
+	grunt.registerTask( 'default', [ 'phplint', 'checkwpversion' ] );
 	grunt.registerTask( 'pot', [ 'checktextdomain', 'makepot' ] );
 
 	grunt.registerTask( 'deploy', [
