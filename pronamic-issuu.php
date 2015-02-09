@@ -1,14 +1,14 @@
 <?php
 /*
 Plugin Name: Pronamic Issuu
-Plugin URI: http://pronamic.eu/wp-plugins/issuu/
-Description: Easily integrate Issuu documents into WordPress.
+Plugin URI: http://www.pronamic.eu/plugins/pronamic-issuu/
+Description: Deprecated — Easily integrate Issuu documents into WordPress.
  
-Version: 0.1
+Version: 1.0.0
 Requires at least: 3.0
 
 Author: Pronamic
-Author URI: http://pronamic.eu/
+Author URI: http://www.pronamic.eu/
 
 Text Domain: pronamic_issuu
 Domain Path: /languages/

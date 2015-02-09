@@ -1,15 +1,17 @@
 === Pronamic Issuu ===
 Contributors: pronamic, remcotolsma
-Tags: pronamic, issuu, pdf, document
+Tags: pronamic, issuu, pdf, document, deprecated
 Requires at least: 3.0
 Tested up to: 3.2
-Stable tag: 0.1
+Stable tag: 1.0.0
 
-Easily integrate Issuu documents into WordPress.
+Deprecated — Easily integrate Issuu documents into WordPress.
 
 == Description ==
 
-...
+> This plugin is deprecated so Pronamic wil no longer support and maintain this plugin.
+>
+> If you want to help maintain the plugin, fork it on [GitHub](https://github.com/pronamic/wp-pronamic-issuu) and open pull requests.
 
 
 == Installation ==
